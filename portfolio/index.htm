@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saumya Tajane</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b3869b8bd2.js" crossorigin="anonymous"></script>
+ </head>
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/b3869b8bd2.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+     <div id="header">
+         <div class="container">
+             <nav>
+                 <img src="log2.jpg" class="logo">
+                 <ul>
+                     <li> <a href="#"> Home</a></li>
+                     <li> <a href="#"> About</a></li>
+                     <li> <a href="#"> Resume</a></li>
+                     <li> <a href="#"> Portfolio</a></li>
+                     <li> <a href="#"> contact
+ 
+                     </a></li>
+
+
+
+                     
+                 </ul>
+             </nav>
+             <div class="header-text">
+                 <p>WEB Designer</p>
+                 <h1>Hi , I am <span>Saumya Tajane</span> <br>from Nagpur</h1>
+             </div>
+         </div> 
+         
+     </div>
+ 
+ 
+    
+     <div id="about">
+         <div class="container">
+         <div class="row">
+             <div class="about-col-1">
+                 <img src="image.jpeg" >
+             </div>
+             <div class="about-col-2">
+                 <h1 class="sub-title">About Me</h1>
+                 <p>Student at Sinhgad institute of Technology<br>A web Developer </p>
+                 <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                     <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                     <p class="tab-links" onclick="opentab('Education')">Education</p>
+ 
+                 </div>
+                 <div class="tab-contents active-tab" id="Skills">
+                     <ul>
+                         <li><span>Web Developer</span><br>HTML  , CSS , JavaScript</li>
+                         <li><span>Programming</span><br>C , C++ , Python</li>
+                         <li><span>Databases</span><br>Mysql , Mongodb</li>
+                     </ul>
+                 </div>
+                 <div class="tab-contents" id="Experience">
+                     <ul>
+                         <li><span> Training in graphics designing @ younitylivelearning </span></li>
+                         <li><span> Training in web-developement @ pregrad </span></li>
+                         <li><span> Virtual internship in web-developement @ codsoft </span></li>
+                       
+                         
+                     </ul>
+ 
+                 </div>
+                 <div class="tab-contents" id="Education">
+                     <ul>
+                         <li><span>BE in Computer </span><br>Pursuing</li>
+                         
+                     </ul>
+                 </div>
+             </div>
+         </div>
+         </div>
+     </div>
+ 
+     <div id="services">
+         <div class="container">
+             <h1 class="sub-title">My Projects</h1>
+             <div class="services-list">
+                 <div>
+                     <i class="fa-regular fa-amazon"></i>
+                     <h2>Amazon Clone Website</h2>
+                     <p>Amazon Clone website was a frontend project
+                        made using html,css and js  
+                    </p>
+                         <a href="//github.com/saumyatajne/MERN-AMAZON_CLONE.git">Github repository </a>
+                        
+                 </div>
+             </div>
+         </div>
+     </div>
+   
+ 
+ <!-- ---------------contact ------------ -->
+     <div id="contact">
+         <div class="container">
+             <div class="row">
+                 <div class="contact-left">
+                     <h1 class="sub-title">Contact Me</h1>
+                     <p><i class="fa-solid fa-envelope-circle-check"></i> saumyatajane.sit.comp@gmail.com</p>
+                     <p><i class="fa-solid fa-phone"></i>0000000000</p>
+                     <div class="social-icons">
+                         <a href=https://www.facebook.com> <i class="fa-brands fa-facebook"></i> </a>
+                         <a href=https://x.com/SaumyaTajne><i  class="fa-brands fa-x-twitter"></i></a>
+                         <a href="https://www.instagram.com/saumya_tajne_"><i class="fa-brands fa-instagram"></i> </a>
+                  
+                         <a href=http://linkedin.com/in/saumya-tajane-a0a615220><i class="fa-brands fa-linkedin"></i></a>
+                         
+                         
+                     </div>
+                     <a href="saumyatajaneresume.pdf" class="btn btn2">Download CV</a>
+                 </div> 
+                 <div class="contact-right">
+                     <form>
+                         <input type=" text" name="Name" placeholder="Your Name" required>
+                         <input type="email" name="email" placeholder="Your E-mail" required>
+                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                         <button type="submit" class="btn btn2">SUBMIT</button>
+                     </form>
+                 </div> 
+             </div>
+         </div>
+         <div class="copyright">
+             <p>copyright @saumya, made By Saumya Tajane</p>
+         </div>
+     </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     <script>
+         var tablinks = document.getElementsByClassName("tab-links");
+         var tabcontents = document.getElementsByClassName("tab-contents");
+ 
+ function opentab(tabname) {
+     for ( tablink of tablinks) {
+         tablink.classList.remove("active-link");
+     }
+     for ( tablink of tabcontents) {
+         tablink.classList.remove("active-tab");
+     }
+     event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+ }
+ 
+ 
+     </script>
+ </body>
+ </html> 
